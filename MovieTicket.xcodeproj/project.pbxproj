@@ -35,6 +35,7 @@
 		36028795241D00F10079B2A5 /* TicketConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028793241D00F10079B2A5 /* TicketConfirmCell.swift */; };
 		36028796241D00F10079B2A5 /* TicketConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36028794241D00F10079B2A5 /* TicketConfirmCell.xib */; };
 		36028798241D063A0079B2A5 /* UITableView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028797241D063A0079B2A5 /* UITableView+extensions.swift */; };
+		3602879A241D18AE0079B2A5 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028799241D18AE0079B2A5 /* CompleteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		36028793241D00F10079B2A5 /* TicketConfirmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketConfirmCell.swift; sourceTree = "<group>"; };
 		36028794241D00F10079B2A5 /* TicketConfirmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketConfirmCell.xib; sourceTree = "<group>"; };
 		36028797241D063A0079B2A5 /* UITableView+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+extensions.swift"; sourceTree = "<group>"; };
+		36028799241D18AE0079B2A5 /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				36028791241D00CC0079B2A5 /* TicketConfirmViewController.swift */,
 				36028793241D00F10079B2A5 /* TicketConfirmCell.swift */,
 				36028794241D00F10079B2A5 /* TicketConfirmCell.xib */,
+				36028799241D18AE0079B2A5 /* CompleteViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				36028773241CB65F0079B2A5 /* SheetSelector.swift in Sources */,
 				36028779241CC4820079B2A5 /* Ticket.swift in Sources */,
 				36028747241C9B4A0079B2A5 /* AppDelegate.swift in Sources */,
+				3602879A241D18AE0079B2A5 /* CompleteViewController.swift in Sources */,
 				36028775241CC2F80079B2A5 /* TicketsViewController.swift in Sources */,
 				36028749241C9B4A0079B2A5 /* SceneDelegate.swift in Sources */,
 				3602875F241CA6940079B2A5 /* Movie.swift in Sources */,

@@ -63,6 +63,15 @@ protocol Ticket {
     var schedule: Schedule { get }
 }
 
+struct TicketCollection {
+    let tickets: [Ticket]
+    
+    var amount: Charge {
+        let amount = tickets.map { $0.charge.value }.reduce(0,+)
+        return Charge(value: amount)
+    }
+}
+
 struct TicketTypeCollection {
     let sheet: Sheet
     let ticketTypess: [TicketType]
