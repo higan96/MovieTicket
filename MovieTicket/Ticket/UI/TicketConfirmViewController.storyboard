@@ -103,7 +103,7 @@
         <!--支払い完了-->
         <scene sceneID="i5s-0j-4KJ">
             <objects>
-                <viewController id="H16-B3-EWY" sceneMemberID="viewController">
+                <viewController id="H16-B3-EWY" customClass="CompleteViewController" customModule="MovieTicket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H0z-5B-VwZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,6 +129,9 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="H16-B3-EWY" eventType="touchUpInside" id="du8-oB-9Ch"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支払いが完了しました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8i-yt-8HG">
                                 <rect key="frame" x="16" y="510" width="382" height="36"/>
