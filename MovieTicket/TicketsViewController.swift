@@ -23,6 +23,7 @@ class TicketsViewController: UIViewController {
     }
     
     @IBOutlet private var tableView: UITableView!
+    @IBOutlet private weak var nextButton: UIBarButtonItem!
     private var program: Program!
     private var ticketTypeCollections: [TicketTypeCollection]!
     private var selector: TicketSelector!
@@ -30,6 +31,14 @@ class TicketsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "チケット種別の選択"
+    }
+    
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        print(selector.reservedTickets)
+    }
+    
+    private func reloadNextButton() {
+        nextButton.isEnabled = selector.isSelectedAll
     }
 }
 
@@ -64,5 +73,6 @@ extension TicketsViewController: UITableViewDelegate,  UITableViewDataSource {
         
         selector.select(selectedTicket, sheet: sheet)
         tableView.reloadData()
+        reloadNextButton()
     }
 }
