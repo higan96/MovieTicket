@@ -16,18 +16,7 @@ enum TicketType {
     case senior(SeniorTicket)
     
     var label: String {
-        switch self {
-        case .normal:
-            return "一般"
-        case .child:
-            return "幼児・小学生"
-        case .shoolStudent:
-            return "中学生・高校生"
-        case .universityStudent:
-            return "大学生・専門学校生"
-        case .senior:
-            return "シニア"
-        }
+        return ticket.label
     }
     
     var ticket: Ticket {
@@ -49,9 +38,25 @@ enum TicketType {
         .senior(SeniorTicket(movie: movie, sheet: sheet, schedule: schedule))
         ]
     }
+    
+    func equlatTo(ticket: Ticket) -> Bool {
+        switch self {
+        case .child:
+            return ticket is ChildTicket
+        case .normal:
+            return ticket is NormalTicket
+        case .shoolStudent:
+            return ticket is SchoolStudentTicket
+        case .universityStudent:
+            return ticket is UniversityStudentTicket
+        case .senior:
+            return ticket is SeniorTicket
+        }
+    }
 }
 
 protocol Ticket {
+    var label: String { get }
     var movie: Movie { get }
     var charge: Charge { get }
     var sheet: Sheet { get }
@@ -69,6 +74,7 @@ struct TicketTypeCollection {
 }
 
 struct NormalTicket: Ticket {
+    let label = "一般"
     let charge = Charge(value: 1900)
     let movie: Movie
     let sheet: Sheet
@@ -76,6 +82,7 @@ struct NormalTicket: Ticket {
 }
 
 struct ChildTicket: Ticket {
+    let label = "幼児・小学生"
     let charge = Charge(value: 1000)
     let movie: Movie
     let sheet: Sheet
@@ -83,6 +90,7 @@ struct ChildTicket: Ticket {
 }
 
 struct SchoolStudentTicket: Ticket {
+    let label = "中学生・高校生"
     let charge = Charge(value: 1200)
     let movie: Movie
     let sheet: Sheet
@@ -90,6 +98,7 @@ struct SchoolStudentTicket: Ticket {
 }
 
 struct UniversityStudentTicket: Ticket {
+    let label = "大学生・専門学校生"
     let charge = Charge(value: 1500)
     let movie: Movie
     let sheet: Sheet
@@ -97,6 +106,7 @@ struct UniversityStudentTicket: Ticket {
 }
 
 struct SeniorTicket: Ticket {
+    let label = "シニア"
     let charge = Charge(value: 1200)
     let movie: Movie
     let sheet: Sheet

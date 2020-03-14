@@ -48,11 +48,21 @@ extension TicketsViewController: UITableViewDelegate,  UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ticketType = ticketTypeCollections[indexPath.section].ticketTypess[indexPath.row]
+        let sheet = ticketTypeCollections[indexPath.section].sheet
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TicketCell", for: indexPath)
         cell.textLabel?.text = ticketType.label
         cell.detailTextLabel?.text = String(ticketType.ticket.charge.value)
-        
+        cell.accessoryType = selector.isSelect(ticketType, at: sheet) ? .checkmark : .none
+
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sheet = ticketTypeCollections[indexPath.section].sheet
+        let selectedTicket = ticketTypeCollections[indexPath.section].ticketTypess[indexPath.row].ticket
+        
+        selector.select(selectedTicket, sheet: sheet)
+        tableView.reloadData()
     }
 }

@@ -23,12 +23,18 @@ class TicketSelector {
         return self.reservedTickets.count == sheetReservations.count
     }
     
-    func select(_ ticket: Ticket, at sheet: Sheet) {
+    func select(_ ticket: Ticket, sheet: Sheet) {
         guard let index = sheetReservations.firstIndex(where: { $0.sheet == sheet }) else { fatalError() }
         let sheetReservation = SheetReservation(sheet: sheet, ticket: ticket)
         
         sheetReservations.remove(at: index)
         sheetReservations.insert(sheetReservation, at: index)
+    }
+    
+    func isSelect(_ ticketType: TicketType, at sheet: Sheet) -> Bool {
+        guard let reservation = sheetReservations.first(where: { $0.sheet == sheet }) else { fatalError() }
+        guard let ticket = reservation.ticket else { return false }
+        return ticketType.equlatTo(ticket: ticket)
     }
 }
 
