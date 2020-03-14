@@ -13,8 +13,11 @@ class TicketsViewController: UIViewController {
     static func instantiate(program: Program, selectedSheets: [Sheet]) -> TicketsViewController {
         let vc = TicketsViewController.instantiate()
         
+        let ticketTypeCollections = selectedSheets.map { TicketTypeCollection(sheet: $0, movie: program.movie, schedule: program.schedule) }
+        
         vc.program = program
-        vc.ticketTypeCollections = selectedSheets.map { TicketTypeCollection(sheet: $0, movie: program.movie, schedule: program.schedule) }
+        vc.ticketTypeCollections = ticketTypeCollections
+        vc.selector = TicketSelector(ticketTypeCollections: ticketTypeCollections)
         
         return vc
     }
@@ -22,6 +25,7 @@ class TicketsViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     private var program: Program!
     private var ticketTypeCollections: [TicketTypeCollection]!
+    private var selector: TicketSelector!
     
     override func viewDidLoad() {
         super.viewDidLoad()

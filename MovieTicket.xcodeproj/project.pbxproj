@@ -28,6 +28,7 @@
 		36028777241CC3050079B2A5 /* TicketsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36028776241CC3050079B2A5 /* TicketsViewController.storyboard */; };
 		36028779241CC4820079B2A5 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028778241CC4820079B2A5 /* Ticket.swift */; };
 		3602877B241CC4FD0079B2A5 /* Charge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602877A241CC4FD0079B2A5 /* Charge.swift */; };
+		3602877D241CCFBC0079B2A5 /* TicketSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602877C241CCFBC0079B2A5 /* TicketSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		36028776241CC3050079B2A5 /* TicketsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TicketsViewController.storyboard; sourceTree = "<group>"; };
 		36028778241CC4820079B2A5 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		3602877A241CC4FD0079B2A5 /* Charge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charge.swift; sourceTree = "<group>"; };
+		3602877C241CCFBC0079B2A5 /* TicketSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				36028768241CAB3A0079B2A5 /* ProgramRepository.swift */,
 				3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */,
 				36028772241CB65F0079B2A5 /* SheetSelector.swift */,
+				3602877C241CCFBC0079B2A5 /* TicketSelector.swift */,
 				36028774241CC2F80079B2A5 /* TicketsViewController.swift */,
 				36028776241CC3050079B2A5 /* TicketsViewController.storyboard */,
 				36028778241CC4820079B2A5 /* Ticket.swift */,
@@ -200,6 +203,7 @@
 				3602875F241CA6940079B2A5 /* Movie.swift in Sources */,
 				36028765241CA73E0079B2A5 /* Sheet.swift in Sources */,
 				36028769241CAB3A0079B2A5 /* ProgramRepository.swift in Sources */,
+				3602877D241CCFBC0079B2A5 /* TicketSelector.swift in Sources */,
 				36028771241CAFEA0079B2A5 /* NSObject+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

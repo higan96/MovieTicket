@@ -13,7 +13,11 @@ enum SheetStatus {
     case reserved
 }
 
-struct Sheet {
+struct Sheet : Equatable{
     let label: String
     let status: SheetStatus
+    
+    static func ==(lhs: Sheet, rhs: Sheet) -> Bool{
+        return lhs.label == rhs.label
+    }
 }
