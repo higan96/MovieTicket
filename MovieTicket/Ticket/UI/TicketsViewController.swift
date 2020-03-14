@@ -41,7 +41,8 @@ class TicketsViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
-        print(selector.reservedTickets)
+        let vc = TicketConfirmViewController.instantiate(tickets: selector.reservedTickets)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func reloadView() {

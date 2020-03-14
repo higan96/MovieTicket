@@ -30,6 +30,11 @@
 		3602877B241CC4FD0079B2A5 /* Charge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602877A241CC4FD0079B2A5 /* Charge.swift */; };
 		3602877D241CCFBC0079B2A5 /* TicketSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602877C241CCFBC0079B2A5 /* TicketSelector.swift */; };
 		3602878D241CFCDC0079B2A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3602878B241CFCDC0079B2A5 /* Main.storyboard */; };
+		36028790241D00BF0079B2A5 /* TicketConfirmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3602878F241D00BF0079B2A5 /* TicketConfirmViewController.storyboard */; };
+		36028792241D00CC0079B2A5 /* TicketConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028791241D00CC0079B2A5 /* TicketConfirmViewController.swift */; };
+		36028795241D00F10079B2A5 /* TicketConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028793241D00F10079B2A5 /* TicketConfirmCell.swift */; };
+		36028796241D00F10079B2A5 /* TicketConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36028794241D00F10079B2A5 /* TicketConfirmCell.xib */; };
+		36028798241D063A0079B2A5 /* UITableView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028797241D063A0079B2A5 /* UITableView+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,11 @@
 		3602877A241CC4FD0079B2A5 /* Charge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charge.swift; sourceTree = "<group>"; };
 		3602877C241CCFBC0079B2A5 /* TicketSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSelector.swift; sourceTree = "<group>"; };
 		3602878C241CFCDC0079B2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3602878F241D00BF0079B2A5 /* TicketConfirmViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TicketConfirmViewController.storyboard; sourceTree = "<group>"; };
+		36028791241D00CC0079B2A5 /* TicketConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketConfirmViewController.swift; sourceTree = "<group>"; };
+		36028793241D00F10079B2A5 /* TicketConfirmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketConfirmCell.swift; sourceTree = "<group>"; };
+		36028794241D00F10079B2A5 /* TicketConfirmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketConfirmCell.xib; sourceTree = "<group>"; };
+		36028797241D063A0079B2A5 /* UITableView+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +176,10 @@
 			children = (
 				36028774241CC2F80079B2A5 /* TicketsViewController.swift */,
 				36028776241CC3050079B2A5 /* TicketsViewController.storyboard */,
+				3602878F241D00BF0079B2A5 /* TicketConfirmViewController.storyboard */,
+				36028791241D00CC0079B2A5 /* TicketConfirmViewController.swift */,
+				36028793241D00F10079B2A5 /* TicketConfirmCell.swift */,
+				36028794241D00F10079B2A5 /* TicketConfirmCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -173,6 +187,7 @@
 		36028785241CFB820079B2A5 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				36028797241D063A0079B2A5 /* UITableView+extensions.swift */,
 				36028770241CAFEA0079B2A5 /* NSObject+extensions.swift */,
 				3602876E241CAF190079B2A5 /* UIViewController+extensions.swift */,
 			);
@@ -248,7 +263,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36028796241D00F10079B2A5 /* TicketConfirmCell.xib in Resources */,
 				36028753241C9B4D0079B2A5 /* LaunchScreen.storyboard in Resources */,
+				36028790241D00BF0079B2A5 /* TicketConfirmViewController.storyboard in Resources */,
 				36028777241CC3050079B2A5 /* TicketsViewController.storyboard in Resources */,
 				3602876D241CAE7C0079B2A5 /* SheetsViewController.storyboard in Resources */,
 				3602878D241CFCDC0079B2A5 /* Main.storyboard in Resources */,
@@ -266,6 +283,7 @@
 			files = (
 				3602876B241CAE640079B2A5 /* SheetsViewController.swift in Sources */,
 				3602877B241CC4FD0079B2A5 /* Charge.swift in Sources */,
+				36028795241D00F10079B2A5 /* TicketConfirmCell.swift in Sources */,
 				3602876F241CAF190079B2A5 /* UIViewController+extensions.swift in Sources */,
 				3602875D241CA6350079B2A5 /* ProgramsViewController.swift in Sources */,
 				36028761241CA6DE0079B2A5 /* Program.swift in Sources */,
@@ -278,7 +296,9 @@
 				36028749241C9B4A0079B2A5 /* SceneDelegate.swift in Sources */,
 				3602875F241CA6940079B2A5 /* Movie.swift in Sources */,
 				36028765241CA73E0079B2A5 /* Sheet.swift in Sources */,
+				36028798241D063A0079B2A5 /* UITableView+extensions.swift in Sources */,
 				36028769241CAB3A0079B2A5 /* ProgramRepository.swift in Sources */,
+				36028792241D00CC0079B2A5 /* TicketConfirmViewController.swift in Sources */,
 				3602877D241CCFBC0079B2A5 /* TicketSelector.swift in Sources */,
 				36028771241CAFEA0079B2A5 /* NSObject+extensions.swift in Sources */,
 			);
