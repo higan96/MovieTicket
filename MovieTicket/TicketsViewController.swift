@@ -23,7 +23,12 @@ class TicketsViewController: UIViewController {
     }
     
     @IBOutlet private var tableView: UITableView!
-    @IBOutlet private weak var nextButton: UIBarButtonItem!
+    @IBOutlet private weak var nextButton: UIButton!
+    @IBOutlet private weak var bottomViewHeight: NSLayoutConstraint!
+    @IBOutlet private weak var countLabel: UILabel!
+    @IBOutlet private weak var emojiLabel: UILabel!
+    
+    
     private var program: Program!
     private var ticketTypeCollections: [TicketTypeCollection]!
     private var selector: TicketSelector!
@@ -31,14 +36,18 @@ class TicketsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "チケット種別の選択"
+        tableView.contentInset.bottom = bottomViewHeight.constant
+        reloadView()
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
         print(selector.reservedTickets)
     }
     
-    private func reloadNextButton() {
+    private func reloadView() {
         nextButton.isEnabled = selector.isSelectedAll
+        countLabel.text = "\(String(selector.reservedTickets.count)) / \(String(selector.sheetReservations.count))"
+        emojiLabel.text = selector.isSelectedAll ? "😄" :  "😫"
     }
 }
 
@@ -73,6 +82,6 @@ extension TicketsViewController: UITableViewDelegate,  UITableViewDataSource {
         
         selector.select(selectedTicket, sheet: sheet)
         tableView.reloadData()
-        reloadNextButton()
+        reloadView()
     }
 }
