@@ -20,11 +20,11 @@ class SheetsViewController: UIViewController {
     
     private var program: Program!
     private let sheetSelector = SheetSelector()
+    private static let cellIdentifier = "SheetCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "座席の選択"
-        sheetSelector.delegate = self
     }
     
     @IBAction func nextButtonDidSelect(_ sender: Any) {
@@ -34,13 +34,13 @@ class SheetsViewController: UIViewController {
 
 extension SheetsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return program.movie.name
+        return "\(program.theater.name) - \(program.movie.name)"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sheet = program.theater.sheets[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SheetCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Self.cellIdentifier, for: indexPath)
         cell.textLabel?.text = sheet.label
         cell.accessoryType = sheetSelector.isSelected(sheet) ? .checkmark : .none
         
@@ -52,16 +52,31 @@ extension SheetsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sheet = program.theater.sheets[indexPath.row]
-        sheetSelector.select(sheet)
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.accessoryType = .checkmark
         
-        tableView.reloadRows(at: [indexPath], with: .automatic)
+        let sheet = program.theater.sheets[indexPath.row]
+        sheetSelector.append(sheet)
+        
+        reloadNextButton()
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.accessoryType = .none
+        
+        let sheet = program.theater.sheets[indexPath.row]
+        sheetSelector.remove(sheet)
+        
+        reloadNextButton()
     }
 }
 
-extension SheetsViewController: SheetSelectorDelegate {
-    func sheetDidSelect(selectedSheets: [Sheet]) {
-        nextButton.isEnabled = !selectedSheets.isEmpty
+private extension SheetsViewController {
+    func reloadNextButton() {
+        let selectedSheets = sheetSelector.selectedSheets
+        
+        nextButton.isEnabled = selectedSheets.count > 0
         nextButton.title = nextButtonTitle(count: selectedSheets.count)
     }
     
