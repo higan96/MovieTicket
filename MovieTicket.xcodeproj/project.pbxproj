@@ -29,6 +29,7 @@
 		36028779241CC4820079B2A5 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028778241CC4820079B2A5 /* Ticket.swift */; };
 		3602877B241CC4FD0079B2A5 /* Charge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602877A241CC4FD0079B2A5 /* Charge.swift */; };
 		3602877D241CCFBC0079B2A5 /* TicketSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602877C241CCFBC0079B2A5 /* TicketSelector.swift */; };
+		3602878D241CFCDC0079B2A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3602878B241CFCDC0079B2A5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		36028778241CC4820079B2A5 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		3602877A241CC4FD0079B2A5 /* Charge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charge.swift; sourceTree = "<group>"; };
 		3602877C241CCFBC0079B2A5 /* TicketSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSelector.swift; sourceTree = "<group>"; };
+		3602878C241CFCDC0079B2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,8 @@
 		36028745241C9B4A0079B2A5 /* MovieTicket */ = {
 			isa = PBXGroup;
 			children = (
+				3602878B241CFCDC0079B2A5 /* Main.storyboard */,
+				36028754241C9B4D0079B2A5 /* Info.plist */,
 				36028785241CFB820079B2A5 /* extensions */,
 				36028786241CFB930079B2A5 /* SupportingFiles */,
 				3602877E241CFAA90079B2A5 /* Movie */,
@@ -182,7 +186,6 @@
 				36028748241C9B4A0079B2A5 /* SceneDelegate.swift */,
 				3602874F241C9B4D0079B2A5 /* Assets.xcassets */,
 				36028751241C9B4D0079B2A5 /* LaunchScreen.storyboard */,
-				36028754241C9B4D0079B2A5 /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				36028753241C9B4D0079B2A5 /* LaunchScreen.storyboard in Resources */,
 				36028777241CC3050079B2A5 /* TicketsViewController.storyboard in Resources */,
 				3602876D241CAE7C0079B2A5 /* SheetsViewController.storyboard in Resources */,
+				3602878D241CFCDC0079B2A5 /* Main.storyboard in Resources */,
 				36028750241C9B4D0079B2A5 /* Assets.xcassets in Resources */,
 				3602875B241CA5E40079B2A5 /* ProgramsViewController.storyboard in Resources */,
 			);
@@ -289,6 +293,14 @@
 				36028752241C9B4D0079B2A5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3602878B241CFCDC0079B2A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3602878C241CFCDC0079B2A5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
