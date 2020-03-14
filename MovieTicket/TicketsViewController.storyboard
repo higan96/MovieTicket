@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,29 +13,29 @@
             <objects>
                 <viewController storyboardIdentifier="TicketsViewController" id="AMc-8t-hCF" customClass="TicketsViewController" customModule="MovieTicket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BDw-By-5jn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="LpJ-ih-k3C">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TicketCell" textLabel="G3F-8U-03k" detailTextLabel="d05-01-jLH" style="IBUITableViewCellStyleSubtitle" id="mfw-e9-VEw">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="55.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mfw-e9-VEw" id="6r8-cG-ZgC">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G3F-8U-03k">
-                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20.000000000000004" y="8.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d05-01-jLH">
-                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyD-YY-p6Y">
-                                <rect key="frame" x="0.0" y="776" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="636" width="414" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-JO-33Y">
                                         <rect key="frame" x="16" y="16" width="382" height="68"/>
@@ -60,13 +60,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="13"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="チケット選択状況:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pm-pY-5LQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="13"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="13"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="- / -" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2o-HW-gKZ">
-                                                        <rect key="frame" x="151.5" y="0.0" width="199.5" height="13"/>
+                                                        <rect key="frame" x="151.33333333333337" y="0.0" width="199.66666666666663" height="13"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -86,7 +86,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="3NV-fD-SSv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" title="購入へ進む">
+                                                <state key="normal" title="確認へ進む">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <state key="disabled" title="チケットを選択してください">
@@ -114,12 +114,12 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pyD-YY-p6Y" firstAttribute="leading" secondItem="ZZ7-dL-mme" secondAttribute="leading" id="00a-8P-QzE"/>
                             <constraint firstItem="ZZ7-dL-mme" firstAttribute="bottom" secondItem="LpJ-ih-k3C" secondAttribute="bottom" id="6jr-xS-OD7"/>
                             <constraint firstItem="ZZ7-dL-mme" firstAttribute="trailing" secondItem="pyD-YY-p6Y" secondAttribute="trailing" id="7hb-jG-w53"/>
-                            <constraint firstAttribute="bottom" secondItem="pyD-YY-p6Y" secondAttribute="bottom" constant="20" symbolic="YES" id="9cH-vP-xhM"/>
+                            <constraint firstItem="ZZ7-dL-mme" firstAttribute="bottom" secondItem="pyD-YY-p6Y" secondAttribute="bottom" id="9cH-vP-xhM"/>
                             <constraint firstItem="ZZ7-dL-mme" firstAttribute="trailing" secondItem="LpJ-ih-k3C" secondAttribute="trailing" id="Aqn-ZV-4Gd"/>
                             <constraint firstItem="LpJ-ih-k3C" firstAttribute="top" secondItem="ZZ7-dL-mme" secondAttribute="top" id="vCF-ur-dpa"/>
                             <constraint firstItem="LpJ-ih-k3C" firstAttribute="leading" secondItem="ZZ7-dL-mme" secondAttribute="leading" id="zlS-Zb-gqN"/>

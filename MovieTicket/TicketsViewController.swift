@@ -70,7 +70,7 @@ extension TicketsViewController: UITableViewDelegate,  UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TicketCell", for: indexPath)
         cell.textLabel?.text = ticketType.label
-        cell.detailTextLabel?.text = String(ticketType.ticket.charge.value)
+        cell.detailTextLabel?.text = ticketType.ticket.charge.label
         cell.accessoryType = selector.isSelect(ticketType, at: sheet) ? .checkmark : .none
 
         return cell

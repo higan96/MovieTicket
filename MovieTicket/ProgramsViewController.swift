@@ -28,9 +28,8 @@ extension ProgramsViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProgramCell", for: indexPath)
         let program = programCollections[indexPath.section].programs[indexPath.row]
         
-        cell.textLabel?.text = program.movie.name
-        cell.detailTextLabel?.text = "hoge"
-        cell.accessoryType = .disclosureIndicator
+        cell.textLabel?.text = program.schedule.startAtLabel
+        cell.detailTextLabel?.text = program.theater.name
         
         return cell
     }

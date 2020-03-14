@@ -15,6 +15,40 @@
           "green" : "0.949"
         }
       }
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "color" : {
+        "color-space" : "extended-srgb",
+        "components" : {
+          "red" : "0.949",
+          "alpha" : "0.948",
+          "blue" : "0.969",
+          "green" : "0.949"
+        }
+      }
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "extended-gray",
+        "components" : {
+          "white" : "0.000",
+          "alpha" : "0.950"
+        }
+      }
     }
   ]
 }
