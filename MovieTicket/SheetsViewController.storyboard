@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sheets View Controller-->
+        <!--Title-->
         <scene sceneID="E8i-bl-eFw">
             <objects>
                 <viewController storyboardIdentifier="SheetsViewController" id="3Ol-ZA-GlF" customClass="SheetsViewController" customModule="MovieTicket" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,13 +29,22 @@
                             <outlet property="delegate" destination="3Ol-ZA-GlF" id="Zz8-pi-qem"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="AQp-5o-Uvn">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" style="done" id="JFI-9u-Lrz">
+                            <connections>
+                                <action selector="nextButtonDidSelect:" destination="3Ol-ZA-GlF" id="Y4h-6l-Np5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="nextButton" destination="JFI-9u-Lrz" id="ojw-N8-lab"/>
                         <outlet property="tableView" destination="5ah-Ik-z86" id="XYU-x1-K6n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fi-Lw-qdV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="-86"/>
+            <point key="canvasLocation" x="200" y="-126"/>
         </scene>
     </scenes>
 </document>

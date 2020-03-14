@@ -23,6 +23,7 @@
 		3602876D241CAE7C0079B2A5 /* SheetsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */; };
 		3602876F241CAF190079B2A5 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602876E241CAF190079B2A5 /* UIViewController+extensions.swift */; };
 		36028771241CAFEA0079B2A5 /* NSObject+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028770241CAFEA0079B2A5 /* NSObject+extensions.swift */; };
+		36028773241CB65F0079B2A5 /* SheetSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028772241CB65F0079B2A5 /* SheetSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SheetsViewController.storyboard; sourceTree = "<group>"; };
 		3602876E241CAF190079B2A5 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		36028770241CAFEA0079B2A5 /* NSObject+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+extensions.swift"; sourceTree = "<group>"; };
+		36028772241CB65F0079B2A5 /* SheetSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				36028766241CA75C0079B2A5 /* Schedule.swift */,
 				36028768241CAB3A0079B2A5 /* ProgramRepository.swift */,
 				3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */,
+				36028772241CB65F0079B2A5 /* SheetSelector.swift */,
 			);
 			path = MovieTicket;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				36028761241CA6DE0079B2A5 /* Program.swift in Sources */,
 				36028767241CA75C0079B2A5 /* Schedule.swift in Sources */,
 				36028763241CA7150079B2A5 /* Theater.swift in Sources */,
+				36028773241CB65F0079B2A5 /* SheetSelector.swift in Sources */,
 				36028747241C9B4A0079B2A5 /* AppDelegate.swift in Sources */,
 				36028749241C9B4A0079B2A5 /* SceneDelegate.swift in Sources */,
 				3602875F241CA6940079B2A5 /* Movie.swift in Sources */,
