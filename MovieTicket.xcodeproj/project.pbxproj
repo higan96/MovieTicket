@@ -88,31 +88,103 @@
 		36028745241C9B4A0079B2A5 /* MovieTicket */ = {
 			isa = PBXGroup;
 			children = (
+				36028785241CFB820079B2A5 /* extensions */,
+				36028786241CFB930079B2A5 /* SupportingFiles */,
+				3602877E241CFAA90079B2A5 /* Movie */,
+				36028781241CFAEB0079B2A5 /* Theater */,
+				36028783241CFB470079B2A5 /* Ticket */,
+			);
+			path = MovieTicket;
+			sourceTree = "<group>";
+		};
+		3602877E241CFAA90079B2A5 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				3602875E241CA6940079B2A5 /* Movie.swift */,
+				36028766241CA75C0079B2A5 /* Schedule.swift */,
+				36028760241CA6DE0079B2A5 /* Program.swift */,
+				36028780241CFAC70079B2A5 /* Infra */,
+				3602877F241CFAB10079B2A5 /* UI */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		3602877F241CFAB10079B2A5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3602875A241CA5E40079B2A5 /* ProgramsViewController.storyboard */,
+				3602875C241CA6350079B2A5 /* ProgramsViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		36028780241CFAC70079B2A5 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				36028768241CAB3A0079B2A5 /* ProgramRepository.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		36028781241CFAEB0079B2A5 /* Theater */ = {
+			isa = PBXGroup;
+			children = (
+				36028764241CA73E0079B2A5 /* Sheet.swift */,
+				36028772241CB65F0079B2A5 /* SheetSelector.swift */,
+				36028762241CA7150079B2A5 /* Theater.swift */,
+				36028782241CFB0D0079B2A5 /* UI */,
+			);
+			path = Theater;
+			sourceTree = "<group>";
+		};
+		36028782241CFB0D0079B2A5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3602876A241CAE640079B2A5 /* SheetsViewController.swift */,
+				3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		36028783241CFB470079B2A5 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				3602877A241CC4FD0079B2A5 /* Charge.swift */,
+				36028778241CC4820079B2A5 /* Ticket.swift */,
+				3602877C241CCFBC0079B2A5 /* TicketSelector.swift */,
+				36028784241CFB5C0079B2A5 /* UI */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		36028784241CFB5C0079B2A5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				36028774241CC2F80079B2A5 /* TicketsViewController.swift */,
+				36028776241CC3050079B2A5 /* TicketsViewController.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		36028785241CFB820079B2A5 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
 				36028770241CAFEA0079B2A5 /* NSObject+extensions.swift */,
 				3602876E241CAF190079B2A5 /* UIViewController+extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		36028786241CFB930079B2A5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				36028746241C9B4A0079B2A5 /* AppDelegate.swift */,
 				36028748241C9B4A0079B2A5 /* SceneDelegate.swift */,
 				3602874F241C9B4D0079B2A5 /* Assets.xcassets */,
 				36028751241C9B4D0079B2A5 /* LaunchScreen.storyboard */,
 				36028754241C9B4D0079B2A5 /* Info.plist */,
-				3602875A241CA5E40079B2A5 /* ProgramsViewController.storyboard */,
-				3602875C241CA6350079B2A5 /* ProgramsViewController.swift */,
-				3602875E241CA6940079B2A5 /* Movie.swift */,
-				3602876A241CAE640079B2A5 /* SheetsViewController.swift */,
-				36028760241CA6DE0079B2A5 /* Program.swift */,
-				36028764241CA73E0079B2A5 /* Sheet.swift */,
-				36028762241CA7150079B2A5 /* Theater.swift */,
-				36028766241CA75C0079B2A5 /* Schedule.swift */,
-				36028768241CAB3A0079B2A5 /* ProgramRepository.swift */,
-				3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */,
-				36028772241CB65F0079B2A5 /* SheetSelector.swift */,
-				3602877C241CCFBC0079B2A5 /* TicketSelector.swift */,
-				36028774241CC2F80079B2A5 /* TicketsViewController.swift */,
-				36028776241CC3050079B2A5 /* TicketsViewController.storyboard */,
-				36028778241CC4820079B2A5 /* Ticket.swift */,
-				3602877A241CC4FD0079B2A5 /* Charge.swift */,
 			);
-			path = MovieTicket;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

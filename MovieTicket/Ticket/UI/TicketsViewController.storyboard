@@ -143,7 +143,7 @@
     </scenes>
     <resources>
         <namedColor name="TicketBottomViewBackground">
-            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="0.94776888420245398" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="0.94800001382827759" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
