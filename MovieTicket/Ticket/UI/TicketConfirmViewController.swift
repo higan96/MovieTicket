@@ -21,16 +21,17 @@ class TicketConfirmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(cellType: TicketConfirmCell.self)
+        title = "購入内容の確認"
     }
 }
 
 extension TicketConfirmViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return tickets.count
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "チケット一覧"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return tickets.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

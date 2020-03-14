@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="3Ol-ZA-GlF" id="Zz8-pi-qem"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="AQp-5o-Uvn">
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="AQp-5o-Uvn">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" style="done" id="JFI-9u-Lrz">
                             <connections>
                                 <action selector="nextButtonDidSelect:" destination="3Ol-ZA-GlF" id="Y4h-6l-Np5"/>

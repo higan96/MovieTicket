@@ -46,6 +46,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Ac8-uc-Om7"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="XN0-Xx-Tla" id="u0r-Gr-Q3Z"/>
                     </connections>
