@@ -19,7 +19,6 @@ class ProgramsViewController: UIViewController {
     }
 }
 
-
 extension ProgramsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return programCollections[section].programs.count
@@ -31,6 +30,7 @@ extension ProgramsViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.textLabel?.text = program.movie.name
         cell.detailTextLabel?.text = "hoge"
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }
@@ -41,5 +41,11 @@ extension ProgramsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return programCollections[section].movie.name
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let program = programCollections[indexPath.section].programs[indexPath.row]
+        let vc = SheetsViewController.instantiate(program: program)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

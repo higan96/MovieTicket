@@ -19,6 +19,10 @@
 		36028765241CA73E0079B2A5 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028764241CA73E0079B2A5 /* Sheet.swift */; };
 		36028767241CA75C0079B2A5 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028766241CA75C0079B2A5 /* Schedule.swift */; };
 		36028769241CAB3A0079B2A5 /* ProgramRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028768241CAB3A0079B2A5 /* ProgramRepository.swift */; };
+		3602876B241CAE640079B2A5 /* SheetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602876A241CAE640079B2A5 /* SheetsViewController.swift */; };
+		3602876D241CAE7C0079B2A5 /* SheetsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */; };
+		3602876F241CAF190079B2A5 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602876E241CAF190079B2A5 /* UIViewController+extensions.swift */; };
+		36028771241CAFEA0079B2A5 /* NSObject+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36028770241CAFEA0079B2A5 /* NSObject+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		36028764241CA73E0079B2A5 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
 		36028766241CA75C0079B2A5 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		36028768241CAB3A0079B2A5 /* ProgramRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramRepository.swift; sourceTree = "<group>"; };
+		3602876A241CAE640079B2A5 /* SheetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsViewController.swift; sourceTree = "<group>"; };
+		3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SheetsViewController.storyboard; sourceTree = "<group>"; };
+		3602876E241CAF190079B2A5 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
+		36028770241CAFEA0079B2A5 /* NSObject+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 		36028745241C9B4A0079B2A5 /* MovieTicket */ = {
 			isa = PBXGroup;
 			children = (
+				36028770241CAFEA0079B2A5 /* NSObject+extensions.swift */,
+				3602876E241CAF190079B2A5 /* UIViewController+extensions.swift */,
 				36028746241C9B4A0079B2A5 /* AppDelegate.swift */,
 				36028748241C9B4A0079B2A5 /* SceneDelegate.swift */,
 				3602874F241C9B4D0079B2A5 /* Assets.xcassets */,
@@ -76,11 +86,13 @@
 				3602875A241CA5E40079B2A5 /* ProgramsViewController.storyboard */,
 				3602875C241CA6350079B2A5 /* ProgramsViewController.swift */,
 				3602875E241CA6940079B2A5 /* Movie.swift */,
+				3602876A241CAE640079B2A5 /* SheetsViewController.swift */,
 				36028760241CA6DE0079B2A5 /* Program.swift */,
 				36028764241CA73E0079B2A5 /* Sheet.swift */,
 				36028762241CA7150079B2A5 /* Theater.swift */,
 				36028766241CA75C0079B2A5 /* Schedule.swift */,
 				36028768241CAB3A0079B2A5 /* ProgramRepository.swift */,
+				3602876C241CAE7C0079B2A5 /* SheetsViewController.storyboard */,
 			);
 			path = MovieTicket;
 			sourceTree = "<group>";
@@ -144,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36028753241C9B4D0079B2A5 /* LaunchScreen.storyboard in Resources */,
+				3602876D241CAE7C0079B2A5 /* SheetsViewController.storyboard in Resources */,
 				36028750241C9B4D0079B2A5 /* Assets.xcassets in Resources */,
 				3602875B241CA5E40079B2A5 /* ProgramsViewController.storyboard in Resources */,
 			);
@@ -156,6 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3602876B241CAE640079B2A5 /* SheetsViewController.swift in Sources */,
+				3602876F241CAF190079B2A5 /* UIViewController+extensions.swift in Sources */,
 				3602875D241CA6350079B2A5 /* ProgramsViewController.swift in Sources */,
 				36028761241CA6DE0079B2A5 /* Program.swift in Sources */,
 				36028767241CA75C0079B2A5 /* Schedule.swift in Sources */,
@@ -165,6 +180,7 @@
 				3602875F241CA6940079B2A5 /* Movie.swift in Sources */,
 				36028765241CA73E0079B2A5 /* Sheet.swift in Sources */,
 				36028769241CAB3A0079B2A5 /* ProgramRepository.swift in Sources */,
+				36028771241CAFEA0079B2A5 /* NSObject+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

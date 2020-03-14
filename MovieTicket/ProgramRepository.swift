@@ -15,7 +15,8 @@ protocol ProgramRepository {
 struct ProgramRepositoryMock: ProgramRepository {
     func programCollections() -> [ProgramCollection] {
         let movie = Movie(name: "クレヨンしんちゃん")
-        let theater = Theater(name: "シアターA", sheets: [])
+        let sheet = Sheet(label: "A-01", status: .empty)
+        let theater = Theater(name: "シアターA", sheets: [sheet])
         let shcedule = Schedule(startAt: Date(), endAt: Date())
         let program = Program(movie: movie, theater: theater, schedule: shcedule)
         let collection = ProgramCollection(movie: movie, programs: [program])
