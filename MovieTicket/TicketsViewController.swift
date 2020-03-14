@@ -25,6 +25,7 @@ class TicketsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "チケット種別の選択"
     }
 }
 

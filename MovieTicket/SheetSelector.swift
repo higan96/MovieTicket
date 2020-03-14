@@ -11,6 +11,10 @@ import Foundation
 class SheetSelector {
     private(set) var selectedSheets: [Sheet] = []
     
+    var sortedSelectedSheets: [Sheet] {
+        return selectedSheets.sorted(by:  { $0.label < $1.label })
+    }
+    
     func isSelected(_ sheet: Sheet) -> Bool {
         return selectedSheets.contains(where: { $0.label == sheet.label })
     }

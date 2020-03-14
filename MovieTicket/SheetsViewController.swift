@@ -28,7 +28,7 @@ class SheetsViewController: UIViewController {
     }
     
     @IBAction func nextButtonDidSelect(_ sender: Any) {
-        let vc = TicketsViewController.instantiate(program: program, selectedSheets: sheetSelector.selectedSheets)
+        let vc = TicketsViewController.instantiate(program: program, selectedSheets: sheetSelector.sortedSelectedSheets)
         navigationController?.pushViewController(vc, animated: true)
     }
 }
