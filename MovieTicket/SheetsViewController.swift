@@ -28,7 +28,8 @@ class SheetsViewController: UIViewController {
     }
     
     @IBAction func nextButtonDidSelect(_ sender: Any) {
-        print(sheetSelector.selectedSheets.count)
+        let vc = TicketsViewController.instantiate(program: program, selectedSheets: sheetSelector.selectedSheets)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
