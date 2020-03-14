@@ -16,6 +16,8 @@ class ProgramsViewController: UIViewController {
         super.viewDidLoad()
         let repository = ProgramRepositoryMock()
         self.programCollections = repository.programCollections()
+        
+        title = "映画を選択"
     }
 }
 
